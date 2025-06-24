@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            .btn {
+                border: none;
+                color: white;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .d {background-color: #04AA6D;}
+            .m {background-color: brown;}
+            .a {background-color: gold;}
+            .n {background-color: aqua;}
+            .model{
+                color:black;
+                padding: 14px 28px;
+                font-size: 16px;
+                font-size: xx-large;
+                font: optional;
+                forced-color-adjust: blue ;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(bg.jpg);">
+        <center id="BASE">
+            <p class="model">HELLO WORLD !! </p>
+            <p>
+                <button class="btn m" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+                <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+                <button class="btn d" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+                
+            </p>
+            <p>
+                <button class="btn m" onclick="document.getElementById('IMG').src='IMG1.png'">STAY CALM</button>
+                <img id="IMG" src="IMG1.png" style="width: 100px;">
+                <button class="btn d" onclick="document.getElementById('IMG').src='IMG2.png'">OPEN MOUSE</button>
+            </p>
+            <p>
+                <button class="btn m" onclick="document.getElementById('IMGG').src='R1.jpeg'">CLOSE</button>
+                <img id="IMGG" src="R1.jpeg" style="width: 200px;">
+                <button class="btn d" onclick="document.getElementById('IMGG').src='R2.jpeg'">OPEN</button>
+            </p>
+        <script>
+            document.getElementById("demo").innerHTML = "My First JavaScript";
+        </script>
+        </center>
+        <center>
+            <p id="demo">
+            <script>
+                document.getElementById("demo").innerHTML= "My First JavaScript";
+            </script>
+            </p>           
+             <button class="btn m" type="button" onclick="document.getElementById('BASE').style.display='none'">DISAPEAR</button>
+             <button class="btn d" onclick="document.getElementById('BASE').style.display='block'">MAGIC</button>
+        </center>
+        <p>
+        <center>
+            <button class="btn a" onclick="window.alert('WARNING!!!')" >DONT TOUCH</button>
+        </center>
+        </p>
+        <center>
+        <p>
+            <a href="page1.html">
+                <button class="btn n">PAGE 1</button> 
+            </a>
+        </p>
+        </center>
+        <center>
+            <p>
+                <a href="page2.html">
+                    <button class="btn n">PAGE 2</button>
+                </a>
+            </p>
+        </center>
+        <center>
+            <a href="page3.html">
+                <button class="btn n">PAGE 3</button>
+            </a>
+        </center>
+    </body>
+</html>
